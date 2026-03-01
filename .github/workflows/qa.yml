@@ -15,11 +15,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: '18'
 
       - name: Install Dependencies
         run: |
-          npm install
+          npm ci
           npx playwright install --with-deps
 
       - name: Run Scraper - 22f3000845@ds.study.iitm.ac.in
